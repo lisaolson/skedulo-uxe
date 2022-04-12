@@ -4,6 +4,11 @@ Full Designs, Mock ups, Palettes, open questions and thought process can be foun
 
 https://www.figma.com/file/vmLO6BbRq0KoPzHTZj3r4d/Skedulo-UX-Employee-Page?node-id=0%3A1
 
+How to Run Project:
+1. Clone this repo
+2. Navigate to the root folder for either desktop or pwa
+3. $open index.html to see/experiment with the changes made
+
 Completed:
 - Sketch designs, color palette, user stories, mock ups, fonts, user flow
 - Basic structure of HTML, CSS and JavaScript for the functionality required
@@ -19,3 +24,5 @@ TODO/Incomplete:
 - Ensure every page is fully accessible
 - Move all users/test data into object and iterate through
 - Complete task of adding the user so 'Save changes' adds a user to the list of total employees
+
+
