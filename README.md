@@ -12,6 +12,7 @@ How to Run Project:
 Completed:
 - Sketch designs, color palette, user stories, mock ups, fonts, user flow
 - Basic structure of HTML, CSS and JavaScript for the functionality required
+- Desktop - form submission adds inputs to localStorage
 - Semantic and semi-responsive coded implementations of Part 1 and Part 2
 - Used exclusively HTML, CSS, and ES6, no additional frameworks were used to complete these tasks
 - Repository fully trackable and documented on GitHub
@@ -20,6 +21,7 @@ TODO/Incomplete:
 - Refactor code to be less repetitive
 - Implement Tailwind.CSS for easier responsive design
 - Implement web/front end framework components for the form, inputs, buttons
+- Use localStorage to display added employees to list of employees
 - Ensure every page is fully responsive on every screen size
 - Ensure every page is fully accessible
 - Move all users/test data into object and iterate through
