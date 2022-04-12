@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fdfdfd;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #295FC4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    padding: 1rem 0; 
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 15rem auto;
+    height: 16rem;
+    background: #fff;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .card--image {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .card--name {
+    color: #222;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+
+  .cardDetail {
+    height: 70vh;
+  }
+
+  button {
+    text-decoration: none;
+    border: none;
+    color: white;
+    background: #295FC4;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 4rem;
+    padding: 1rem 3rem;
+}
