@@ -1,0 +1,85 @@
+/* EMPLOYEES */
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+}
+
+.allEmployees {
+    margin: 2rem auto;
+    width: 100%;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    font-size: 14px;
+}
+
+.allEmployees .name {
+    font-weight: bold;
+}
+
+.card {
+    text-align: center;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    color: white;
+    background: #295FC4;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.linkBtn {
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #295FC4;
+    color: #295FC4;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.uploadBtn {
+    font-size: 14px;
+    color: #295FC4;
+}
+
+/* .imgSection {
+    display: flex;
+    justify-content: end;
+} */
+
+h2.newEmployee {
+    padding: 4rem;
+}
+
+form {
+    margin: 0 15rem;
+}
+
+form input {
+    width: 100%;
+    margin: .5rem 0;
+}
+form img {
+    width: 100px;
+    height: 100px;
+    background-color: #A7BDE6;
+}
+
+.submitSection {
+    text-align: center;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.submitSection button {
+    margin-right: 1rem;
+    cursor: pointer;
+}
