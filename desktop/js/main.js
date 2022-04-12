@@ -1,57 +1,57 @@
-const User1 = {
-  id: 1,
-  firstName: 'Andy',
-  lastName: 'Johnson',
-  preferredName: '',
-  pronouns: '',
-  role: '',
-  phone: '',
-  birthday: '',
-  }
+// const User1 = {
+//   id: 1,
+//   firstName: 'Andy',
+//   lastName: 'Johnson',
+//   preferredName: '',
+//   pronouns: '',
+//   role: '',
+//   phone: '',
+//   birthday: '',
+//   }
 
-const User2 = {
-  id: 2,
-  firstName: 'Andy',
-  lastName: 'Johnson',
-  preferredName: '',
-  pronouns: '',
-  role: '',
-  phone: '',
-  birthday: '',
-  }
+// const User2 = {
+//   id: 2,
+//   firstName: 'Andy',
+//   lastName: 'Johnson',
+//   preferredName: '',
+//   pronouns: '',
+//   role: '',
+//   phone: '',
+//   birthday: '',
+//   }
 
-const User3 = {
-  id: 3,
-  firstName: 'Andy',
-  lastName: 'Johnson',
-  preferredName: '',
-  pronouns: '',
-  role: '',
-  phone: '',
-  birthday: '',
-  }
+// const User3 = {
+//   id: 3,
+//   firstName: 'Andy',
+//   lastName: 'Johnson',
+//   preferredName: '',
+//   pronouns: '',
+//   role: '',
+//   phone: '',
+//   birthday: '',
+//   }
 
-const User4 = {
-  id: 4,
-  firstName: 'Andy',
-  lastName: 'Johnson',
-  preferredName: '',
-  pronouns: '',
-  role: '',
-  phone: '',
-  birthday: '',
-}
+// const User4 = {
+//   id: 4,
+//   firstName: 'Andy',
+//   lastName: 'Johnson',
+//   preferredName: '',
+//   pronouns: '',
+//   role: '',
+//   phone: '',
+//   birthday: '',
+// }
 
-const User5 = {
-  id: 5,
-  firstName: 'Andy',
-  lastName: 'Johnson',
-  preferredName: '',
-  pronouns: '',
-  role: '',
-  phone: '',
-  birthday: '',
-}
+// const User5 = {
+//   id: 5,
+//   firstName: 'Andy',
+//   lastName: 'Johnson',
+//   preferredName: '',
+//   pronouns: '',
+//   role: '',
+//   phone: '',
+//   birthday: '',
+// }
 
 const formId = "userForm";
 const url = location.href;
@@ -70,22 +70,41 @@ const getFormData = () => {
   return data;
 };
 
-submitBtn.onclick = event => {
-  event.preventDefault();
+const checkForm = () => {
   data = getFormData();
-  localStorage.firstName = JSON.stringify(data.firstName);
-  localStorage.lastName = JSON.stringify(data.lastName);
-  localStorage.preferredName = JSON.stringify(data.preferredName);
-  localStorage.pronouns = JSON.stringify(data.pronouns);
-  localStorage.role = JSON.stringify(data.role);
-  localStorage.phone = JSON.stringify(data.phone);
-  localStorage.birthday = JSON.stringify(data.birthday);
-  userForm.reset();
-  window.location.href = "index.html";
+  if (
+    data.firstName === "" ||
+    data.lastName === "" ||
+    data.preferredName === "" ||
+    data.pronouns === "" ||
+    data.role === "" ||
+    data.phone === "" ||
+    data.birthday === ""
+  ) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+submitBtn.onclick = e => {
+  e.preventDefault();
+  if (checkForm()) {
+    data = getFormData();
+    localStorage.firstName = JSON.stringify(data.firstName);
+    localStorage.lastName = JSON.stringify(data.lastName);
+    localStorage.preferredName = JSON.stringify(data.preferredName);
+    localStorage.pronouns = JSON.stringify(data.pronouns);
+    localStorage.role = JSON.stringify(data.role);
+    localStorage.phone = JSON.stringify(data.phone);
+    localStorage.birthday = JSON.stringify(data.birthday);
+    userForm.reset();
+    window.location.href = "index.html";
+  }
 };
 
 const userFirstName = localStorage.getItem('firstName');
-console.log('user first', userFirstName);
+// console.log('user first', userFirstName);
 var tag = document.createElement("p");
 var text = document.createTextNode(userFirstName);
 tag.appendChild(text);

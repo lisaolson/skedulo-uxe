@@ -54,6 +54,19 @@ main {
     margin-right: 2rem;
 }
 
+/* input:invalid {
+    border: 1px solid red;
+  }
+  
+  input:invalid:required {
+    background-color: pink;
+  }
+  
+  input:valid {
+    border: 1px solid #192358;
+  } */
+  
+
 .opener a {
     text-decoration: none;
     color: white;
@@ -63,9 +76,33 @@ main {
     font-size: 14px;
 }
 
+.opener a:hover,
+#submitBtn:hover {
+    transition: .3s all;
+    background-color: #192358;
+}
+
 main {
     width: 80%;
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.footerSection {
+    display: flex;
+    justify-content: center;
+}
+
+.loadMore {
+    width: 8rem;
+    text-align: center;
+}
+
+.loadMore:hover,
+.linkBtn:hover {
+    transition: .3s all;
+    background-color: #192358;
+    border: 1px solid #192358;
+    color: white;
 }
