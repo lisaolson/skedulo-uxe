@@ -1,5 +1,3 @@
-Skedulo UXE
-
 Full Designs, Mock ups, Palettes, open questions and thought process can be found here:
 
 https://www.figma.com/file/vmLO6BbRq0KoPzHTZj3r4d/Skedulo-UX-Employee-Page?node-id=0%3A1
